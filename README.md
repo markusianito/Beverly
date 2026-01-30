@@ -6,7 +6,7 @@ Beverly is a lightweight Arduino library for handling push buttons with debounce
 long press detection and clean state transitions.
 
 It is designed primarily for AVR microcontrollers, but works on any Arduino-compatible
-architecture that provides `digitalRead()` and `millis()`.
+architecture that provides `pinMode()`, `digitalRead()` and `millis()`.
 
 ## Features
 
@@ -28,7 +28,7 @@ architecture that provides `digitalRead()` and `millis()`.
 - Sketch → Include Library → Add .ZIP Library
 
 ### Arduino Library Manager
-Search for **Facebits** and install it directly.
+Search for **Beverly** and install it directly.
 
 ## Basic Usage
 
@@ -38,10 +38,8 @@ See examples/button.ino
 
     start() must be called in setup before using watch()
 
-    Held is reported continuously while the button remains pressed
+    BAction::Held is reported continuously while the button remains pressed
 
     Timing is handled using millis() with 16-bit overflow-safe logic
 
-## License
-
-MIT License
+## Licensed under MIT License.
